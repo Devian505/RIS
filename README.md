@@ -1,14 +1,14 @@
-RIS task1 
+<h1 align=center> RIS task1 </h1>
 Downloading and installing NPM modules
-$ git clone https://github.com/Devian505/RIS-task1.git
-$ cd task1
-$ npm i
+<code> git clone https://github.com/Devian505/RIS-task1.git </code>
+<code> cd task1 </code>
+<code> npm i </code>
 (optional) Installing the application as an NPM module
-$ [sudo] npm i -g ./
+<code> [sudo] npm i -g ./ </code>
 Usage example:
 CLI tool accept 4 options:
 
--i, --input: an input file
+-i, --input: an input file 
 -o, --output: an output file
 -a, --action: an action 1/2
 
