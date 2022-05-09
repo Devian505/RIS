@@ -1,11 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser')
-const clientsRouter = require('./resources/client/client.router');
-const productsRouter = require('./resources/products/products.router');
-const ordersRouter = require('./resources/orders/orders.router');
+import express from 'express';
+import bodyParser from 'body-parser';
+import clientsRouter from './resources/client/client.router';
+import productsRouter from './resources/products/products.router';
+import ordersRouter from './resources/orders/orders.router';
 
 const app = express();
-
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
@@ -21,4 +20,4 @@ app.use('/clients', clientsRouter);
 app.use('/products', productsRouter);
 app.use('/orders', ordersRouter);
 
-module.exports = app;
+export default app;
